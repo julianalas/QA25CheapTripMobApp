@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.List;
 
 public class MainPageTests extends TestBase{
     @Test
@@ -25,8 +24,9 @@ public class MainPageTests extends TestBase{
                         "View/android.view.View[1]/android.view.View[2]/android.view.View[2]"));
 
         System.out.println(slogan.getText());
-        Assert.assertEquals(slogan.getText(), "CheapTrip.Pay less, travel more");
-
-
+        Assert.assertEquals(slogan.getText(), "CheapTrip. Pay less, travel more");
+        
     }
+
 }
+

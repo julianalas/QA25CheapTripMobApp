@@ -21,8 +21,8 @@ public class TestBase {
         System.out.println("current dir = " + baseDir);
 
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("deviceName", "Nexus_5");
-        capabilities.setCapability("platformVersion", "8.0.0");
+        capabilities.setCapability("deviceName", "NativeDevice");
+        capabilities.setCapability("platformVersion", "9");
         capabilities.setCapability("automationName", "Appium");
         capabilities.setCapability("appPackage", "io.ionic.starter");
         capabilities.setCapability("appActivity", "io.ionic.starter.MainActivity");
@@ -31,8 +31,6 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
     }
-
-
 
     @AfterMethod
     public void quitApp(){
